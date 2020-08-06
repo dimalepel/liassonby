@@ -1,0 +1,49 @@
+/* About Numbers */
+
+.about-numbers {
+    margin-top: 209px;
+    padding-top: 49px;
+    padding-bottom: 75px;
+    background-image: url("../../images/bg-about-numbers.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.about-numbers__title {
+    margin-bottom: 52px;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--white);
+    text-align: center;
+}
+
+.about-numbers__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-numbers__item {
+    width: 254px;
+    padding-left: 13px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+    border-left: 4px solid var(--white);
+}
+
+.about-numbers__item:first-child {
+    width: 357px;
+}
+
+.about-numbers__number {
+    display: block;
+    margin-top: -7px;
+    margin-bottom: 4px;
+    font-family: var(--font-family-custom);
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+}
