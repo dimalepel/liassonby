@@ -1,0 +1,121 @@
+/* Intro */
+
+.intro {
+    overflow: hidden;
+}
+
+.intro__item {
+    position: relative;
+}
+
+.intro__thumbnail {
+    display: block;
+    width: 1920px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.intro__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.intro__inner > .container {
+    display: flex;
+    width: 100%;
+}
+
+.intro__wrapper {
+    width: 100%;
+    border-bottom: 4px solid var(--color-accent);
+}
+
+.intro__titles {
+    max-width: 490px;
+    margin: 86px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.intro__title {
+    padding-left: 29px;
+}
+
+.intro__title:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.intro__title {
+    position: relative;
+    font-family: var(--font-family-custom);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--black);
+}
+
+.intro__title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 21px;
+    height: 17px;
+    background-image: url("../../images/ico-check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro__description {
+    position: relative;
+    max-width: 500px;
+    margin-top: 43px;
+    padding-left: 29px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #606060;
+}
+.intro__description::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 21px;
+    height: 2px;
+    margin-right: 10px;
+    background-color: var(--color-accent);
+}
+
+
+.intro__buttons {
+    display: flex;
+    margin-top: 44px;
+    margin-left: 29px;
+}
+
+.intro__button {
+    display: block;
+    min-width: 220px;
+    padding: 12px 29px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+    border: 2px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.intro__button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.intro__button:first-child {
+    border-color: var(--color-accent);
+}
