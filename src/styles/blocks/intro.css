@@ -15,6 +15,18 @@
     object-fit: cover;
 }
 
+@media (max-width: 579px) and (min-width: 480px) {
+    .intro__thumbnail {
+        height: 550px;
+    }
+}
+
+@media (max-width: 399px) {
+    .intro__thumbnail {
+        display: none;
+    }
+}
+
 .intro__inner {
     position: absolute;
     top: 0;
@@ -22,6 +34,12 @@
     right: 0;
     bottom: 0;
     display: flex;
+}
+
+@media (max-width: 399px) {
+    .intro__inner {
+        position: initial;
+    }
 }
 
 .intro__inner > .container {
@@ -41,6 +59,12 @@
     list-style: none;
 }
 
+@media (max-width: 579px) {
+    .intro__titles {
+        margin-top: 50px;
+    }
+}
+
 .intro__title {
     padding-left: 29px;
 }
@@ -58,6 +82,13 @@
     color: var(--black);
 }
 
+@media (max-width: 479px) {
+    .intro__title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
+
 .intro__title::before {
     content: "";
     position: absolute;
@@ -68,6 +99,12 @@
     background-image: url("../../images/ico-check.svg");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 479px) {
+    .intro__title::before {
+        top: 6px;
+    }
 }
 
 .intro__description {
@@ -97,6 +134,19 @@
     margin-left: 29px;
 }
 
+@media (max-width: 579px) {
+    .intro__buttons {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 399px) {
+    .intro__buttons {
+        margin-bottom: 50px;
+    }
+}
+
 .intro__button {
     display: block;
     min-width: 220px;
@@ -114,6 +164,12 @@
     transition-duration: var(--duration-interval);
 }
 
+@media (max-width: 579px) {
+    .intro__button {
+        margin-bottom: 10px;
+    }
+}
+
 .intro__button:hover {
     border-color: var(--color-accent);
     background-color: var(--color-accent);
@@ -121,6 +177,12 @@
 
 .intro__button:not(:last-child) {
     margin-right: 10px;
+}
+
+@media (max-width: 579px) {
+    .intro__button:not(:last-child) {
+        margin-right: 0;
+    }
 }
 
 .intro__button:first-child {
