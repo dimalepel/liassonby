@@ -61,4 +61,19 @@
         }
     }
     openSubMenu('.js--parent', '.js--child', 1024);
+
+    // Аккордион
+    function openAccordion(element) {
+        let trigger = $(element).find('.accordion__title');
+
+        $(trigger).click(function (event) {
+            console.log('click');
+            $(this).parent().siblings().removeClass('active');
+            $(this).parent().siblings().find('.accordion__content').slideUp();
+            $(this).parent().toggleClass('active');
+            $(this).siblings('.accordion__content').slideToggle();
+            return false;
+        });
+    }
+    openAccordion('.js--accordion');
 })();

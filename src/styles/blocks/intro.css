@@ -110,6 +110,13 @@
     border: 2px solid #DDDDDD;
     box-sizing: border-box;
     border-radius: 3px;
+    transition-property: background-color, border-color;
+    transition-duration: var(--duration-interval);
+}
+
+.intro__button:hover {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
 }
 
 .intro__button:not(:last-child) {
