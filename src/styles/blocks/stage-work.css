@@ -1,0 +1,127 @@
+/* Stage Work */
+
+.stage-work {
+    padding-top: 52px;
+    margin-bottom: 63px;
+    border-top: 1px solid #EAEAEA;
+}
+
+.stage-work__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .stage-work__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .stage-work__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.stage-work__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .stage-work__item {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .stage-work__item {
+        margin-bottom: 40px;
+    }
+}
+
+.stage-work__item::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-accent);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.stage-work__item--bell::before {
+    background-image: url("../../images/ico-consultations.svg");
+}
+
+.stage-work__item--meeting::before {
+    background-image: url("../../images/ico-guarantees.svg");
+}
+
+.stage-work__item--work::before {
+    background-image: url("../../images/ico-work.svg");
+}
+
+.stage-work__item--signing::before {
+    background-image: url("../../images/ico-signing.svg");
+}
+
+.stage-work__item--payment::before {
+    background-image: url("../../images/ico-payment.svg");
+}
+
+.stage-work__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: -75px;
+    display: block;
+    flex-shrink: 0;
+    width: 11px;
+    height: 19px;
+    background-image: url("../../images/ico-arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+    .stage-work__item:not(:last-child)::after {
+        right: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stage-work__item:not(:last-child)::after {
+        right: -40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .stage-work__item:not(:last-child)::after {
+        right: calc(50% - 5px);
+        top: initial;
+        bottom: -20px;
+        transform: rotate(90deg);
+    }
+}
+
+.stage-work__description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}

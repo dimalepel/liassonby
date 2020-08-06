@@ -1,0 +1,26 @@
+/* Post Mail */
+
+.post-mail {
+    position: relative;
+    padding-left: 30px;
+    color: #C4C4C4;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: var(--duration-interval);
+}
+
+.post-mail:hover {
+    color: var(--color-accent);
+}
+
+.post-mail::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 13px;
+    background-image: url("../../images/ico-mail.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+}

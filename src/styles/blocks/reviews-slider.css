@@ -1,0 +1,27 @@
+/* Reviews Slider */
+
+.reviews-slider {
+    margin-top: 51px;
+}
+
+.reviews-slider .slick-list {
+    margin-right: -20px;
+}
+
+.reviews-slider__item {
+    margin-right: 20px;
+}
+
+.reviews-slider__thumbnail {
+    width: 100%;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition-property: border-color;
+    transition-duration: var(--duration-interval);
+}
+
+.reviews-slider__thumbnail:hover {
+    border-color: var(--color-accent);
+}

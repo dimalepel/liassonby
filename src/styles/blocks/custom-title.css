@@ -1,0 +1,24 @@
+/* Custom Title */
+
+.custom-title {
+    margin-top: 38px;
+    margin-bottom: 13px;
+    font-family: var(--font-family-custom);
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 400;
+}
+
+.custom-title:first-of-type {
+    margin-top: 51px;
+}
+
+.custom-title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 4px;
+    margin-right: 10px;
+    background-color: var(--color-accent);
+}

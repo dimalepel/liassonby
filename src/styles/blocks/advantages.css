@@ -1,0 +1,108 @@
+/* Advantages */
+
+.advantages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 70px;
+    padding-right: 40px;
+    padding-bottom: 33px;
+    list-style: none;
+}
+
+@media (max-width: 1024px) {
+    .advantages {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 60px) / 2);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+    .advantages__item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 641px), (max-width: 460px) {
+    .advantages__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .advantages__item {
+        width: 100%;
+    }
+}
+
+.advantages__item::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+    background-color: var(--color-accent);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+@media (max-width: 800px) and (min-width: 641px), (max-width: 460px) {
+    .advantages__item::before {
+        margin-bottom: 10px;
+    }
+
+    .advantages__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.advantages__item--guarantees::before {
+    background-image: url("../../images/ico-guarantees.svg");
+}
+
+.advantages__item--1c::before {
+    background-image: url("../../images/ico-1c.svg");
+}
+
+.advantages__item--consultations::before {
+    background-image: url("../../images/ico-consultations.svg");
+}
+
+.advantages__item--efficiency::before {
+    background-image: url("../../images/ico-efficiency.svg");
+}
+
+.advantages__title {
+    max-width: 240px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.advantages__description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4F4F4F;
+}

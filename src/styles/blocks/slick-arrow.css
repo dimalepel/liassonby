@@ -1,0 +1,40 @@
+/* Slick Arrow */
+
+.slick-arrow {
+    position: absolute;
+    top: calc(50% - 15px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.slick-arrow svg {
+    fill: #828282;
+    transition-property: fill;
+    transition-duration: var(--duration-interval);
+}
+
+.slick-arrow:hover svg {
+    fill: var(--color-accent);
+}
+
+.slick-arrow.slick-prev {
+    left: -50px;
+}
+
+@media (max-width: 480px) {
+    .slick-arrow.slick-prev {
+        left: -35px;
+    }
+}
+
+.slick-arrow.slick-next {
+    right: -50px;
+}
+
+@media (max-width: 480px) {
+    .slick-arrow.slick-next {
+        right: -35px;
+    }
+}

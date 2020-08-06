@@ -1,0 +1,32 @@
+/* Request Service */
+
+.request-service::after {
+    background-image: url("../../images/bg-request-service-form.jpg");
+}
+
+.request-service__content {
+    padding: 46px 84px 80px 50px;
+}
+
+@media (max-width: 900px) {
+    .request-service__content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 800px) {
+    .request-service__content {
+        padding-top: 1px;
+    }
+}
+
+.request-service__title {
+    margin-bottom: 22px;
+}
+
+.request-service__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

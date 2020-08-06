@@ -1,0 +1,28 @@
+/* Work Schedule */
+
+.work-schedule {
+    margin-top: 17px;
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+@media (max-width: 1070px) {
+    .work-schedule {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .work-schedule {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@media (max-width: 700px) {
+    .work-schedule {
+        display: none;
+    }
+}

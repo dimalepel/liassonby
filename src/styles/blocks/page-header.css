@@ -1,0 +1,38 @@
+/* Page Header */
+
+.page-header {
+    background-color: var(--white);
+    box-shadow: 0 7px 20px rgba(173, 173, 173, 0.25);
+}
+
+.page-header__inner {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+    .page-header__inner {
+        align-items: center;
+    }
+}
+
+.page-header__contacts {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+@media (max-width: 1024px) {
+    .page-header__contacts {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-top: 24px;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-header__contacts {
+        margin-top: 0;
+    }
+}

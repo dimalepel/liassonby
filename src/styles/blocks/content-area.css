@@ -1,0 +1,11 @@
+/* Content Area */
+
+.content-area p {
+    max-width: 910px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+
+.content-area ul {
+    max-width: 850px;
+}

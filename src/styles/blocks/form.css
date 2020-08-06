@@ -1,0 +1,132 @@
+/* Form */
+
+.form__field {
+    width: 100%;
+    padding: 14px 18px 13px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+    color: var(--black);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D7D7D7;
+    border-radius: 3px;
+    transition-property: border-color;
+    transition-duration: var(--duration-interval);
+}
+
+.form__field:hover {
+    border-color: var(--black);
+}
+
+.form__field:focus {
+    border-color: var(--color-accent);
+}
+
+.receive-consultation .form__field {
+    padding-top: 11px;
+    color: var(--white);
+    background-color: #424242;
+    border-color: #424242;
+}
+
+.receive-consultation .form__field:hover {
+    border-color: var(--white);
+}
+
+.receive-consultation .form__field:focus {
+    border-color: var(--color-accent);
+}
+
+.request-service__form .form__field::-webkit-input-placeholder {
+    font-family: inherit;
+    color: var(--black);
+    opacity: 1;
+}
+
+.request-service__form .form__field::-moz-placeholder {
+    font-family: inherit;
+    color: var(--black);
+    opacity: 1;
+}
+
+.request-service__form .form__field:-ms-input-placeholder {
+    font-family: inherit;
+    color: var(--black);
+    opacity: 1;
+}
+
+.request-service__form .form__field::-ms-input-placeholder {
+    font-family: inherit;
+    color: var(--black);
+    opacity: 1;
+}
+
+.request-service__form .form__field::placeholder {
+    font-family: inherit;
+    color: var(--black);
+    opacity: 1;
+}
+
+.receive-consultation .form__field::-webkit-input-placeholder {
+    font-family: inherit;
+    color: var(--white);
+    opacity: 1;
+}
+
+.receive-consultation .form__field::-moz-placeholder {
+    font-family: inherit;
+    color: var(--white);
+    opacity: 1;
+}
+
+.receive-consultation .form__field:-ms-input-placeholder {
+    font-family: inherit;
+    color: var(--white);
+    opacity: 1;
+}
+
+.receive-consultation .form__field::-ms-input-placeholder {
+    font-family: inherit;
+    color: var(--white);
+    opacity: 1;
+}
+
+.receive-consultation .form__field::placeholder {
+    font-family: inherit;
+    color: var(--white);
+    opacity: 1;
+}
+
+.request-service__form .form__field-wrapper {
+    width: calc((100% - 10px) / 2);
+}
+
+@media (max-width: 800px) and (min-width: 651px), (max-width: 480px) {
+    .request-service__form .form__field-wrapper {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.receive-consultation .form__field-wrapper {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.request-service__form .form__submit {
+    margin-top: 4px;
+    padding: 12px 43px 12px 45px;
+}
+
+@media (max-width: 380px) {
+    .request-service__form .form__submit {
+        width: 100%;
+    }
+}
+
+.receive-consultation .form__submit {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 14px;
+}

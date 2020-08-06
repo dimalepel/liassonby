@@ -1,0 +1,10 @@
+/* Table Wrapper */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.content-area .table-wrapper {
+    margin-top: 71px;
+    margin-bottom: 50px;
+}

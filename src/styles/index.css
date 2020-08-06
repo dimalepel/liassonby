@@ -1,0 +1,49 @@
+/* Global */
+
+@import 'fonts.css';
+@import 'box-model.css';
+@import 'variables.css';
+
+/* Blocks */
+
+@import 'blocks/page.css';
+@import 'blocks/visually-hidden.css';
+@import 'blocks/container.css';
+@import 'blocks/page-header.css';
+@import 'blocks/logo.css';
+@import 'blocks/phone-numbers.css';
+@import 'blocks/messengers.css';
+@import 'blocks/work-schedule.css';
+@import 'blocks/navigation.css';
+@import 'blocks/main-menu.css';
+@import 'blocks/menu-trigger.css';
+@import 'blocks/sub-menu.css';
+@import 'blocks/page-title.css';
+@import 'blocks/content-area.css';
+@import 'blocks/custom-title.css';
+@import 'blocks/custom-list.css';
+@import 'blocks/custom-table.css';
+@import 'blocks/table-wrapper.css';
+@import 'blocks/open-calculator.css';
+@import 'blocks/alt-area.css';
+@import 'blocks/accent-area.css';
+@import 'blocks/request-service.css';
+@import 'blocks/form.css';
+@import 'blocks/advantages.css';
+@import 'blocks/promo.css';
+@import 'blocks/button.css';
+@import 'blocks/stage-work.css';
+@import 'blocks/reviews.css';
+@import 'blocks/slick.css';
+@import 'blocks/reviews-slider.css';
+@import 'blocks/slick-arrow.css';
+@import 'blocks/section-title.css';
+@import 'blocks/title.css';
+@import 'blocks/other-facilities.css';
+@import 'blocks/page-footer.css';
+@import 'blocks/footer-details.css';
+@import 'blocks/footer-contacts.css';
+@import 'blocks/address-and-work-schedule.css';
+@import 'blocks/post-mail.css';
+@import 'blocks/footer-form.css';
+

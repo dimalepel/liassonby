@@ -1,0 +1,21 @@
+/* Footer Form */
+
+.footer-form {
+    width: 280px;
+    margin-left: auto;
+}
+
+@media (max-width: 960px) {
+    .footer-form {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 610px) {
+    .footer-form {
+        order: -1;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+}

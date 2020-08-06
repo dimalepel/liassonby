@@ -1,0 +1,51 @@
+/* Accent Area */
+
+.accent-area {
+    position: relative;
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    box-shadow: -6px 28px 50px #EFEFEF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accent-area::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    background-position: center right;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .accent-area::after {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .accent-area::after {
+        display: none;
+    }
+}
+
+.accent-area__content {
+    margin-right: 350px;
+    border-right: 4px solid var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .accent-area__content {
+        margin-right: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .accent-area__content {
+        margin-right: 0;
+        border-right: none;
+    }
+}

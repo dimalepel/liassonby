@@ -1,0 +1,10 @@
+/* Page Title */
+
+.page-title {
+    max-width: 660px;
+    margin-top: 27px;
+    margin-bottom: 32px;
+    font-family: var(--font-family-custom);
+    font-size: 28px;
+    line-height: 36px;
+}

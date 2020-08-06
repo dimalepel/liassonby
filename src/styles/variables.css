@@ -1,0 +1,13 @@
+/* Variables */
+
+:root {
+    --color-accent: #F5BA20;
+
+    --white: #ffffff;
+    --black: #000000;
+
+    --font-family-default: "Open Sans", "Arial", sans-serif;
+    --font-family-custom: "Lora", "Times New Roman", serif;
+
+    --duration-interval: 0.2s;
+}

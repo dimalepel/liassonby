@@ -1,0 +1,20 @@
+/* Address and Work Schedule */
+
+.address-and-work-schedule {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.address-and-work-schedule::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    background-image: url("../../images/ico-location.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}

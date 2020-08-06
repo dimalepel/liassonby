@@ -1,0 +1,21 @@
+/* Reviews */
+
+.reviews {
+    padding-top: 42px;
+    padding-bottom: 79px;
+    border-top: 1px solid #EAEAEA;;
+}
+
+@media (max-width: 1160px) {
+    .reviews {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews {
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+}

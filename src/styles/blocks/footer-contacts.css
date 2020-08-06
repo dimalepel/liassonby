@@ -1,0 +1,15 @@
+/* Footer Contacts */
+
+.footer-contacts {
+    max-width: 270px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #C4C4C4;
+}
+
+@media (max-width: 900px) {
+    .footer-contacts {
+        margin-right: auto;
+    }
+}
+

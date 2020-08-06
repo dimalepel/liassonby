@@ -1,0 +1,11 @@
+/* Alt Area */
+
+.alt-area {
+    margin-top: 57px;
+    padding-top: 81px;
+    background-color: #F8F8F8;
+}
+
+.alt-area ~ .alt-area {
+    margin-top: 73px;
+}

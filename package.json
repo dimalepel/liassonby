@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*,fonts/**/*,scripts/*.js",
+    "test": "editorconfig-checker",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir build --file-ext html",
+    "script": "copyfiles -f ./src/scripts/*.js build/scripts",
+    "fonts": "copyfiles -f ./src/fonts/* build/fonts",
+    "images": "copyfiles -f ./src/images/* build/images",
+    "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output build/styles/index.css",
+    "build": "npm run html && npm run styles && npm run script && npm run fonts && npm run images"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "copyfiles": "^2.3.0",
+    "editorconfig-checker": "^3.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
+  }
+}

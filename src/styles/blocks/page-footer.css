@@ -1,0 +1,24 @@
+/* Page Footer */
+
+.page-footer {
+    padding-top: 103px;
+    padding-bottom: 77px;
+    background-color: #313131;
+}
+
+@media (max-width: 650px) {
+    .page-footer {
+        padding-top: 77px;
+    }
+}
+
+.page-footer__grid {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+    .page-footer__grid {
+        flex-wrap: wrap;
+    }
+}

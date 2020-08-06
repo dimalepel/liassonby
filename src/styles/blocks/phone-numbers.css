@@ -1,0 +1,63 @@
+/* Phone Numbers */
+
+.phone-numbers {
+    position: relative;
+    margin: 0;
+    list-style: none;
+}
+
+.phone-numbers--header {
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+}
+
+@media (max-width: 640px) {
+    .phone-numbers--header {
+        display: none;
+    }
+}
+
+.phone-numbers--footer {
+    padding-left: 30px;
+}
+
+.phone-numbers--header li:not(:last-child) {
+    margin-right: 6px;
+}
+
+.phone-numbers::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../images/ico-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.phone-numbers--footer::before {
+    top: 6px;
+}
+
+.phone-numbers__item {
+    font-size: 15px;
+    line-height: 21px;
+    color: var(--black);
+}
+
+.phone-numbers--footer .phone-numbers__item {
+    color: #C4C4C4;
+}
+
+.phone-numbers__item a {
+    color: inherit;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: var(--duration-interval);
+}
+
+.phone-numbers__item a:hover {
+    color: var(--color-accent);
+}
